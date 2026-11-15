@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Каталог средств для ухода за кожей GladSkin: очищение, увлажнение, сыворотки и SPF-защита.">
+  <title>Каталог — GladSkin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Перейти к основному содержимому</a>
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="GladSkin — главная"><img src="images/logo.svg" alt="Логотип GladSkin" width="48" height="48"><span>Glad<strong>Skin</strong></span></a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a tabindex="0" href="index.html">Главная</a><a tabindex="0" aria-current="page" href="catalog.html">Каталог</a><a tabindex="0" href="product.html">Товар</a><a tabindex="0" href="cart.html">Корзина</a><a tabindex="0" href="contacts.html">Контакты</a>
+    </nav>
+  </header>
+  <main id="main-content" class="page-main">
+    <section class="page-intro">
+      <p class="eyebrow">Подберите свой уход</p>
+      <h1>Каталог косметики</h1>
+      <p>Средства для очищения, увлажнения и ежедневной защиты кожи.</p>
+    </section>
+    <form class="filter-panel" action="catalog.html" method="get">
+      <div class="field"><label for="search">Поиск товара</label><input id="search" name="search" type="search" placeholder="Например, сыворотка"></div>
+      <div class="field"><label for="category">Категория</label><select id="category" name="category"><option value="">Все категории</option><option>Очищение</option><option>Крем для лица</option><option>Мицеллярная вода</option><option>Сыворотка</option><option>Эссенция</option><option>Маска</option><option>Маска для губ</option><option>Защита SPF</option><option>Уход за телом</option></select></div>
+      <div class="field"><label for="sort">Сортировка</label><select id="sort" name="sort"><option value="popular">Сначала популярные</option><option value="cheap">Сначала дешевле</option><option value="expensive">Сначала дороже</option></select></div>
+      <button class="button button-small" type="submit">Применить</button>
+    </form>
+    <p class="demo-note">Поиск, фильтры и сортировка размечены для следующей практической работы и пока не обрабатывают товары.</p>
+    <section class="product-grid" aria-label="Все товары">
+      <article class="product-card">
+        <a class="product-image" href="product.html" aria-label="Подробнее: The Ordinary Hyaluronic Acid 2% + B5">
+          <img src="images/the-ordinary.svg" alt="Флакон увлажняющей сыворотки The Ordinary Hyaluronic Acid 2% + B5, 30 мл" width="370" height="249" loading="lazy">
+        </a>
+        <div class="product-info">
+          <p class="product-type">Сыворотка</p>
+          <h2><a href="product.html">The Ordinary Hyaluronic Acid 2% + B5</a></h2>
+          <p class="product-description">Увлажняющая сыворотка с гиалуроновой кислотой и витамином B5, 30 мл.</p>
+          <p class="price">1 450 ₽</p>
+        </div>
+      </article>
+      <article class="product-card">
+        <a class="product-image" href="product.html" aria-label="Подробнее: CeraVe Moisturising Cream">
+          <img src="images/cerave-cream.svg" alt="Баночка увлажняющего крема CeraVe Moisturising Cream, 50 мл" width="370" height="249" loading="lazy">
+        </a>
+        <div class="product-info">
+          <p class="product-type">Крем для лица</p>
+          <h2><a href="product.html">CeraVe Moisturising Cream</a></h2>
+          <p class="product-description">Увлажняющий крем для поддержания защитного барьера кожи, 50 мл.</p>
+          <p class="price">1 250 ₽</p>
+        </div>
+      </article>
+      <article class="product-card">
+        <a class="product-image" href="product.html" aria-label="Подробнее: CeraVe Hydrating Cleanser">
+          <img src="images/cerave-cleanser.svg" alt="Флакон очищающего средства CeraVe Hydrating Cleanser, 150 мл" width="370" height="249" loading="lazy">
+        </a>
+        <div class="product-info">
+          <p class="product-type">Очищение</p>
+          <h2><a href="product.html">CeraVe Hydrating Cleanser</a></h2>
+          <p class="product-description">Мягкое очищающее средство для ежедневного ухода, 150 мл.</p>
+          <p class="price">950 ₽</p>
+        </div>
+      </article>
+      <article class="product-card">
+        <a class="product-image" href="product.html" aria-label="Подробнее: Bioderma Sensibio H2O">
+          <img src="images/bioderma-sensibio.svg" alt="Флакон мицеллярной воды Bioderma Sensibio H2O, 250 мл" width="370" height="249" loading="lazy">
+        </a>
+        <div class="product-info">
+          <p class="product-type">Мицеллярная вода</p>
+          <h2><a href="product.html">Bioderma Sensibio H2O</a></h2>
+          <p class="product-description">Мицеллярная вода для очищения чувствительной кожи, 250 мл.</p>
+          <p class="price">1 100 ₽</p>
+        </div>
+      </article>
+      <article class="product-card">
+        <a class="product-image" href="product.html" aria-label="Подробнее: COSRX Advanced Snail 96 Mucin Power Essence">
+          <img src="images/cosrx-snail.svg" alt="Флакон эссенции COSRX Advanced Snail 96 Mucin Power Essence, 100 мл" width="370" height="249" loading="lazy">
+        </a>
+        <div class="product-info">
+          <p class="product-type">Эссенция</p>
+          <h2><a href="product.html">COSRX Advanced Snail 96 Mucin Power Essence</a></h2>
+          <p class="product-description">Увлажняющая эссенция для ежедневного ухода, 100 мл.</p>
+          <p class="price">1 600 ₽</p>
+        </div>
+      </article>
+      <article class="product-card">
+        <a class="product-image" href="product.html" aria-label="Подробнее: La Roche-Posay Anthelios SPF 50+">
+          <img src="images/laroche-anthelios.svg" alt="Тюбик солнцезащитного средства La Roche-Posay Anthelios SPF 50+, 50 мл" width="370" height="249" loading="lazy">
+        </a>
+        <div class="product-info">
+          <p class="product-type">Защита SPF</p>
+          <h2><a href="product.html">La Roche-Posay Anthelios SPF 50+</a></h2>
+          <p class="product-description">Солнцезащитное средство для ежедневного ухода, 50 мл.</p>
+          <p class="price">2 100 ₽</p>
+        </div>
+      </article>
+      <article class="product-card">
+        <a class="product-image" href="product.html" aria-label="Подробнее: SkinCeuticals C E Ferulic">
+          <img src="images/garnier-micellar.svg" alt="Флакон антиоксидантной сыворотки SkinCeuticals C E Ferulic, 30 мл" width="370" height="249" loading="lazy">
+        </a>
+        <div class="product-info">
+          <p class="product-type">Сыворотка</p>
+          <h2><a href="product.html">SkinCeuticals C E Ferulic</a></h2>
+          <p class="product-description">Антиоксидантная сыворотка с витаминами C и E для ежедневного ухода, 30 мл.</p>
+          <p class="price">5 400 ₽</p>
+        </div>
+      </article>
+      <article class="product-card">
+        <a class="product-image" href="product.html" aria-label="Подробнее: The Inkey List Niacinamide Serum">
+          <img src="images/avene-cicalfate.svg" alt="Флакон The Inkey List Niacinamide Serum, 30 мл" width="370" height="249" loading="lazy">
+        </a>
+        <div class="product-info">
+          <p class="product-type">Сыворотка</p>
+          <h2><a href="product.html">The Inkey List Niacinamide Serum</a></h2>
+          <p class="product-description">Сыворотка с ниацинамидом для ухода за кожей с жирным блеском, 30 мл.</p>
+          <p class="price">1 300 ₽</p>
+        </div>
+      </article>
+      <article class="product-card">
+        <a class="product-image" href="product.html" aria-label="Подробнее: Beauty of Joseon Dynasty Cream">
+          <img src="images/vitamin-c.svg" alt="Баночка крема Beauty of Joseon Dynasty Cream, 50 мл" width="370" height="249" loading="lazy">
+        </a>
+        <div class="product-info">
+          <p class="product-type">Крем для лица</p>
+          <h2><a href="product.html">Beauty of Joseon Dynasty Cream</a></h2>
+          <p class="product-description">Питательный крем для ежедневного увлажнения кожи лица, 50 мл.</p>
+          <p class="price">2 400 ₽</p>
+        </div>
+      </article>
+      <article class="product-card">
+        <a class="product-image" href="product.html" aria-label="Подробнее: Innisfree Super Volcanic Pore Clay Mask">
+          <img src="images/innisfree-volcanic-mask.svg" alt="Баночка Innisfree Super Volcanic Pore Clay Mask, 100 мл" width="370" height="249" loading="lazy">
+        </a>
+        <div class="product-info">
+          <p class="product-type">Маска</p>
+          <h2><a href="product.html">Innisfree Super Volcanic Pore Clay Mask</a></h2>
+          <p class="product-description">Очищающая глиняная маска для жирной и комбинированной кожи, 100 мл.</p>
+          <p class="price">1 190 ₽</p>
+        </div>
+      </article>
+      <article class="product-card">
+        <a class="product-image" href="product.html" aria-label="Подробнее: Laneige Lip Sleeping Mask">
+          <img src="images/sheet-mask.svg" alt="Баночка Laneige Lip Sleeping Mask, ночная маска для губ, 20 г" width="370" height="249" loading="lazy">
+        </a>
+        <div class="product-info">
+          <p class="product-type">Маска для губ</p>
+          <h2><a href="product.html">Laneige Lip Sleeping Mask</a></h2>
+          <p class="product-description">Ночная маска для ухода за губами, 20 г.</p>
+          <p class="price">550 ₽</p>
+        </div>
+      </article>
+      <article class="product-card">
+        <a class="product-image" href="product.html" aria-label="Подробнее: NUXE Huile Prodigieuse">
+          <img src="images/nuxe-huile-prodigieuse.svg" alt="Флакон NUXE Huile Prodigieuse, многофункциональное масло, 50 мл" width="370" height="249" loading="lazy">
+        </a>
+        <div class="product-info">
+          <p class="product-type">Уход за телом</p>
+          <h2><a href="product.html">NUXE Huile Prodigieuse</a></h2>
+          <p class="product-description">Многофункциональное сухое масло для кожи лица, тела и волос, 50 мл.</p>
+          <p class="price">1 790 ₽</p>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer class="site-footer"><p>© 2026 GladSkin</p><p>Забота, которую видно и чувствуется.</p><a href="contacts.html">Связаться с нами</a></footer>
+</body>
+</html>
