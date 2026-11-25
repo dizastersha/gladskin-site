@@ -11,7 +11,7 @@
   <a class="skip-link" href="#main-content">Перейти к основному содержимому</a>
   <header class="site-header">
     <a class="brand" href="index.html" aria-label="GladSkin — главная"><img src="images/logo.svg" alt="Логотип GladSkin" width="48" height="48"><span>Glad<strong>Skin</strong></span></a>
-    <nav class="main-nav" aria-label="Основная навигация"><a tabindex="0" href="index.html">Главная</a><a tabindex="0" href="catalog.html">Каталог</a><a tabindex="0" href="product.html">Товар</a><a tabindex="0" href="cart.html">Корзина</a><a tabindex="0" aria-current="page" href="contacts.html">Контакты</a></nav>
+    <nav class="main-nav" aria-label="Основная навигация"><a href="index.html">Главная</a><a href="catalog.html">Каталог</a><a href="product.html">Товар</a><a href="cart.html">Корзина</a><a aria-current="page" href="contacts.html">Контакты</a></nav>
   </header>
   <main id="main-content" class="page-main">
     <section class="page-intro"><p class="eyebrow">Мы на связи</p><h1>Контакты</h1><p>Есть вопрос по уходу или товарам? Напишите нам — будем рады помочь.</p></section>
@@ -27,19 +27,43 @@
         </address>
         <p class="demo-note">Контактные данные демонстрационные и приведены для учебного проекта.</p>
       </div>
-      <form class="contact-form" action="#" method="get">
+      <form class="contact-form" id="contact-form" data-validated-form="contact" novalidate>
         <h2>Форма обратной связи</h2>
         <p>Заполните поля, и мы сможем связаться с вами.</p>
-        <div class="field"><label for="name">Ваше имя</label><input id="name" name="name" type="text" autocomplete="name" minlength="2" maxlength="60" required placeholder="Как к вам обращаться?"></div>
-        <div class="field"><label for="email">Электронная почта</label><input id="email" name="email" type="email" autocomplete="email" required placeholder="name@example.com"></div>
-        <div class="field"><label for="topic">Тема обращения</label><select id="topic" name="topic"><option value="question">Вопрос о товаре</option><option value="delivery">Доставка</option><option value="other">Другое</option></select></div>
-        <div class="field"><label for="message">Сообщение</label><textarea id="message" name="message" rows="5" required minlength="5" placeholder="Напишите ваш вопрос..."></textarea></div>
-        <label class="check-field"><input type="checkbox" name="consent" required> Я согласен(на) на обработку данных для ответа на обращение.</label>
+        <div class="field">
+          <label for="name">Ваше имя</label>
+          <input id="name" name="name" type="text" autocomplete="name" minlength="2" maxlength="60" required aria-describedby="name-error" placeholder="Как к вам обращаться?">
+          <small class="field-error" id="name-error" data-error-for="name"></small>
+        </div>
+        <div class="field">
+          <label for="email">Электронная почта</label>
+          <input id="email" name="email" type="email" autocomplete="email" required aria-describedby="email-error" placeholder="name@example.com">
+          <small class="field-error" id="email-error" data-error-for="email"></small>
+        </div>
+        <div class="field">
+          <label for="topic">Тема обращения</label>
+          <select id="topic" name="topic" required>
+            <option value="question">Вопрос о товаре</option>
+            <option value="delivery">Доставка</option>
+            <option value="other">Другое</option>
+          </select>
+        </div>
+        <div class="field">
+          <label for="message">Сообщение</label>
+          <textarea id="message" name="message" rows="5" required minlength="10" maxlength="1000" aria-describedby="message-error" placeholder="Напишите ваш вопрос (не менее 10 символов)..."></textarea>
+          <small class="field-error" id="message-error" data-error-for="message"></small>
+        </div>
+        <div class="consent-wrap">
+          <label class="check-field"><input id="consent" type="checkbox" name="consent" required> Я согласен(на) на обработку данных для ответа на обращение.</label>
+          <small class="field-error" id="consent-error" data-error-for="consent"></small>
+        </div>
         <button class="button" type="submit">Отправить сообщение</button>
-        <p class="demo-note">Форма размечена для практической работы; серверная отправка не настроена.</p>
+        <p class="form-status" id="contact-form-status" role="status" aria-live="polite"></p>
+        <p class="demo-note">Учебная форма проверяет заполнение в браузере. Передача обращения на сервер в этой работе не выполняется.</p>
       </form>
     </section>
   </main>
   <footer class="site-footer"><p>© 2026 GladSkin</p><p>Забота, которую видно и чувствуется.</p><a href="catalog.html">Перейти в каталог</a></footer>
+  <script src="script.js" defer></script>
 </body>
 </html>
